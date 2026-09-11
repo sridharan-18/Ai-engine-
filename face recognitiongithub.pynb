@@ -1,0 +1,42 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNVHPuRcwSKobBw8HS9JZkY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sridharan-18/Ai-engine-/blob/master/face%20recognitiongithub.pynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "cf3ad1d7"
+      },
+      "source": [
+        "## Resources\n",
+        "\n",
+        "### Face Embeddings (DeepFace / FaceNet)\n",
+        "Extract unique numerical vectors for each face, so you can recognize individuals instead of just detecting them."
+      ]
+    }
+  ]
+}
