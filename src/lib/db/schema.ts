@@ -36,3 +36,22 @@ export const chats = sqliteTable('chats', {
     .$type<DBFile[]>()
     .default(sql`'[]'`),
 });
+
+export const customAgents = sqliteTable('customAgents', {
+  id: text('id').primaryKey(),
+  name: text('name').notNull(),
+  description: text('description').notNull(),
+  systemInstructions: text('systemInstructions').notNull(),
+  preferredModel: text('preferredModel').notNull(),
+  preferredMode: text('preferredMode', { enum: ['speed', 'balanced', 'quality'] }).default('balanced'),
+  createdAt: text('createdAt').notNull(),
+  context: text('context', { mode: 'json' }).default(sql`'{}'`),
+});
+
+export const queryCache = sqliteTable('queryCache', {
+  id: text('id').primaryKey(),
+  query: text('query').notNull(),
+  response: text('response', { mode: 'json' }).notNull(),
+  createdAt: text('createdAt').notNull(),
+  lastAccessed: text('lastAccessed').notNull(),
+});

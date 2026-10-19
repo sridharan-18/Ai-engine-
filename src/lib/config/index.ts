@@ -23,6 +23,41 @@ class ConfigManager {
   uiConfigSections: UIConfigSections = {
     preferences: [
       {
+        name: 'Language',
+        key: 'language',
+        type: 'select',
+        options: [
+          {
+            name: 'English',
+            value: 'en',
+          },
+          {
+            name: 'Tamil',
+            value: 'ta',
+          },
+          {
+            name: 'Hindi',
+            value: 'hi',
+          },
+          {
+            name: 'Telugu',
+            value: 'te',
+          },
+          {
+            name: 'Malayalam',
+            value: 'ml',
+          },
+          {
+            name: 'Kannada',
+            value: 'kn',
+          },
+        ],
+        required: false,
+        description: 'Choose your preferred language for the interface.',
+        default: 'en',
+        scope: 'client',
+      },
+      {
         name: 'Theme',
         key: 'theme',
         type: 'select',
